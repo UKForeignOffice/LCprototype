@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  {% include "includes/breadcrumb_examples.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          Are you applying for an emergency travel document for yourself?
+        </h3>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Are you applying for an emergency travel document for yourself?</legend>
+
+            <label for="radio-yes" class="block-label">
+              <input id="radio-yes" type="radio" name="yourself" value="yes">
+             
+              Yes
+            </label>
+
+            <label for="radio-no" class="block-label">
+              <input id="radio-no" type="radio" name="yourself" value="no">
+            
+             No
+            </label>
+
+            
+            </div>
+
+          </fieldset>
+          <p>
+        <a class="button button-start" href="/britishcitizen" role="button">next</a>
+      </p>
+        </div>
+
+
+
+      </form>
+
+    </div>
+  </div>
+</main>
+            
+
+{% endblock %}
