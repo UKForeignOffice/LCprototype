@@ -10,7 +10,6 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <a class="link-back" href="/examples/">Back</a>
 
       <h1 class="heading-large">
         When are you travelling?
@@ -121,6 +120,7 @@
             </label>
 
             </div>
+            </fieldset>
                 <h3 class="heading-small">
           Why do you need to travel?
 
@@ -128,7 +128,7 @@
 
       
         <div class="form-group">
-          <fieldset>
+       <fieldset>
 
             <legend class="visuallyhidden">Why do you need to travel?</legend>
 <label for="radio-home" class="block-label">
@@ -170,25 +170,32 @@
             </label>
 
 
-            <label for="radio-other" class="block-label">
+            <label for="radio-other" class="block-label" data-target="other">
               <input id="radio-other" type="radio" name="whytravel" value="other">
             
              Other
             </label>
-            </div>
+          
 
-          </fieldset>
+            <div class="panel panel-border-narrow js-hidden" id="other">
+              <label class="form-label" for="other">
+                If other, tell us the reason
+              </label>
+              <input class="form-control" type="text" id="other">
+          </div> 
+
+</div>
+</fieldset>
+
           <p>
         <a class="button button-start" href="/yourdetails" role="button">next</a>
       </p>
-        </div>
-
+     
 
 
       </form>
 
-    </div>
-  </div>
+
 </main>
 
 {% endblock %}

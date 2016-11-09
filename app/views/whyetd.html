@@ -25,7 +25,7 @@
               My passport has been lost
             </label>
 
-            <label for="radio-stolen" class="block-label">
+            <label for="radio-stolen" class="block-label"> 
               <input id="radio-stolen" type="radio" name="why" value="stolen">
             
              My passport has been stolen
@@ -64,14 +64,22 @@
               My passport is with a foreign embassy for visa processing
             </label>
 
-            <label for="radio-other" class="block-label">
+            <label for="radio-other" class="block-label" data-target="other">
               <input id="radio-other" type="radio" name="why" value="other">
             
              Another reason
             </label>
 
+           
+
+</div>
+<div class="panel panel-border-narrow js-hidden" id="other">
+              <label class="form-label" for="other">
+                If other, tell us the reason
+              </label>
+              <input class="form-control" type="text" id="other">
             </div>
-            </div>
+           </div>
 
           </fieldset>
           <br>
@@ -88,8 +96,7 @@
 
       </form>
 
-    </div>
-  </div>
+    
 </main>
             
 

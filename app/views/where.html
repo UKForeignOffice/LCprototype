@@ -51,7 +51,7 @@
 
 <div>
 
-      <p><a href="/radio-buttons-checkboxes">Add another transit country.</a> </p>
+      <p><a href="/notransit">Add another transit country.</a> </p>
       <div/>
 
 
@@ -68,7 +68,7 @@
 
             <legend class="visuallyhidden"> Do you need to return to where you are now?</legend>
 
-                <label for="radio-yes" class="block-label">
+                <label for="radio-yes" class="block-label" data-target="yes">
               <input id="radio-yes" type="radio" name="return" value="yes">
              
               Yes
@@ -80,7 +80,12 @@
              No
             </label>
 
-            
+   </div>
+            <div class="panel panel-border-narrow js-hidden" id="yes">
+              <label class="form-label" for="yes">
+              <p>
+                For the sake of this test, please select No.
+                </p>
             </div>
 
           </fieldset>
