@@ -7,7 +7,7 @@
 {% block content %}
 <main id="content" role="main">
 
-  {% include "includes/breadcrumb_examples.html" %}
+ 
 
   <div class="grid-row">
     <div class="column-two-thirds">
@@ -31,7 +31,7 @@
             <legend class="visuallyhidden">previous passport</legend>
 
                    
-            <label for="radio-yes" class="block-label">
+            <label for="radio-yes" class="block-label" data-target="yes">
               <input id="radio-yes" type="radio" name="previouspassport" value="yes">
              
               Yes
@@ -43,7 +43,12 @@
              No
             </label>
 
-            
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="yes">
+              <label class="form-label" for="yes">
+              <p>
+                For the sake of this test, please select No.
+                </p>
             </div>
 
           </fieldset>

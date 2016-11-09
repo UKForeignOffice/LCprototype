@@ -7,7 +7,6 @@
 {% block content %}
 <main id="content" role="main">
 
-  {% include "includes/breadcrumb_examples.html" %}
 
   <div class="grid-row">
     <div class="column-two-thirds">
@@ -30,7 +29,7 @@
 
             <legend class="visuallyhidden">Payment</legend>
 
-           <label for="radio-online" class="block-label">
+           <label for="radio-online" class="block-label" data-target="yes">
               <input id="radio-online" type="radio" name="pay" value="online">
              
               Pay online
@@ -42,13 +41,18 @@
              Pay at the consulate
             </label>
 
-              <label for="radio-friend" class="block-label">
+              <label for="radio-friend" class="block-label" data-target="yes">
               <input id="radio-friend" type="radio" name="pay" value="friend">
             
              Ask a friend to pay
             </label>
 
-            
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="yes">
+              <label class="form-label" for="yes">
+              <p>
+                For this test please select Pay at the consulate.
+                </p>
             </div>
 
           </fieldset>
