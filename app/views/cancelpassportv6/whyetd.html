@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          Why do you need an emergency travel document?
+        </h3>
+
+      
+            <label for="radio-lost" class="block-label">
+              <input id="radio-lost" type="radio" name="why" value="lost">
+             
+              My passport has been lost
+            </label>
+
+            <label for="radio-stolen" class="block-label"> 
+              <input id="radio-stolen" type="radio" name="why" value="stolen">
+            
+             My passport has been stolen
+            </label>
+
+
+            <label for="radio-expire" class="block-label">
+              <input id="radio-expire" type="radio" name="why" value="expire">
+             
+              My passport has expired or is about to expire
+            </label>
+
+            <label for="radio-full" class="block-label">
+              <input id="radio-full" type="radio" name="why" value="full">
+            
+             My passport is full
+            </label>
+
+
+            <label for="radio-defaced" class="block-label">
+              <input id="radio-defaced" type="radio" name="why" value="defaced">
+             
+              My passport has been defaced or damaged
+            </label>
+
+
+
+            <label for="radio-HMPO" class="block-label" data-target="HMPO">
+              <input id="radio-HMPO" type="radio" name="why" value="HMPO">
+            
+             My passport is with HM Passport Office or at a foreign embassy
+            </label>
+
+<div class="panel panel-border-narrow js-hidden" id="HMPO">
+              <label class="form-label" for="HMPO">
+
+          <fieldset>
+
+            <legend class="visuallyhidden">previous names</legend>
+
+                   
+            <label for="radio-yes" class="block-label" data-target="yes"> 
+              <input id="radio-yes" type="radio" name="previousname" value="yes">
+             
+              My passport is with HM Passport Office
+            </label>
+
+            <label for="radio-no" class="block-label">
+              <input id="radio-no" type="radio" name="previousname" value="no">
+
+              My passport is with a foreign embassy for visa processing
+            
+             
+            </label>
+                
+              </label>
+             
+            </div>
+
+
+            <label for="radio-other" class="block-label" data-target="other">
+              <input id="radio-other" type="radio" name="why" value="other">
+            
+             Another reason
+            </label>
+
+           
+
+</div>
+<div class="panel panel-border-narrow js-hidden" id="other">
+              <label class="form-label" for="other">
+                If other, tell us the reason
+              </label>
+              <input class="form-control" type="text" id="other">
+            </div>
+           </div>
+
+          </fieldset>
+
+      </form>
+
+          <br>
+          </br>
+          <p>If your passport is both lost and expired, select lost.
+          <p>
+        <a class="button button-start" href="/cancelpassportv6/where" role="button">next</a>
+
+</p>
+      </p>
+       
+
+
+
+
+    
+</main>
+            
+
+{% endblock %}

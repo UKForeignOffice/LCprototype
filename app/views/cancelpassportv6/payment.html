@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          Payment options?
+        </h3>
+
+        <p>Before you submit your application, tell us how you will pay. </p>
+
+        <p> An emergency travel document costs £100 or the equivalent in local currency which has to be paid before your emergency travel document can be issued. </p>
+
+        <p> Payment will only be taken when you arrive at the consulate and we have checked your application to make sure it's valid. </p>
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Payment</legend>
+
+           <label for="radio-online" class="block-label" data-target="yes">
+              <input id="radio-online" type="radio" name="pay" value="online">
+             
+              Pay online
+            </label>
+
+            <label for="radio-consulate" class="block-label">
+              <input id="radio-consulate" type="radio" name="pay" value="consulate">
+            
+             Pay at the consulate
+            </label>
+
+              <label for="radio-friend" class="block-label" data-target="yes">
+              <input id="radio-friend" type="radio" name="pay" value="friend">
+            
+             Ask a friend to pay
+            </label>
+
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="yes">
+              <label class="form-label" for="yes">
+              <p>
+                For this test please select Pay at the consulate.
+                </p>
+            </div>
+
+          </fieldset>
+          <p>
+        <a class="button button-start" href="/cancelpassportv6/cancelpassportcont" role="button">next</a>
+      </p>
+        </div>
+
+
+
+      </form>
+
+    </div>
+  </div>
+</main>
+            
+
+{% endblock %}

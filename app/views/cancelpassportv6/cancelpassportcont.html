@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          Lost or stolen passport
+        </h3>
+
+    <p> As your passport is lost or stolen it will be cancelled when you click on Submit at the end of this application. This is irreversible if you later find your passport.  </p>
+
+<div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+   It is a criminal offence to cancel someone else's passport without their knowledge or consent.
+  </strong>
+
+
+</div>
+       
+       <p>
+       </p>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">What is your nationality?</legend>
+
+            <label for="lost" class="block-label">
+              <input type="checkbox" name="lost" value="lost" id="lost">
+              Tick to confirm that you have read and understood that your passport will be cancelled when you submit at the end of the application
+            </label>
+
+          
+        </div>
+
+       </fieldset>
+       
+          <p>
+        <a class="button button-start" href="/cancelpassportv6/confirmation" role="button">next</a>
+      </p>
+        </div>
+
+
+
+      </form>
+
+    </div>
+  </div>
+</main>
+            
+
+{% endblock %}

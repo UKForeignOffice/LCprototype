@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          Where would you like to complete your application?
+        </h3>
+
+        <p> The person needing an emergency travel document must attend a consulate in person to complete their application. </p>
+
+        <p> Select your nearest consulate:
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Nearest Consulate?</legend>
+
+                   
+            <label for="radio-amsterdam" class="block-label">
+              <input id="radio-amsterdam" type="radio" name="nearest-consulate" value="amsterdam">
+             
+              British Consulate General Amsterdam
+            </label>
+
+          
+            </label>
+            
+            </div>
+
+            <p> </p>
+
+<p>(This service is not available in every country.  If no consulates are available for selection,<a href="/Nearestconsulate"> contact your nearest British consulate</a>.)</p>
+
+            <p> 
+
+          </fieldset>
+          <p>
+        <a class="button button-start" href="/cancelpassportv6/payment" role="button">next</a>
+      </p>
+        </div>
+
+
+
+      </form>
+
+    </div>
+  </div>
+</main>
+            
+
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>You can only get an emergency travel document if you're abroad. If the person needing to travel is currently in the UK they should apply for a passport.</p>
+      <p>An emergency travel document is normally issued within 2 working days and can sometimes be done within 24 hours. It costs £100 or the equivalent in local currency which can be paid online or in the consulate.</p>
+      <p>To apply you'll need (for the person needing to travel):</p>
+
+      <ul class="list list-bullet">
+      <li>an email address, so we can confirm receipt of your application</li>
+      <li>proof of your travel plans, eg flight booking confirmations (or detailed written plans if you can't book ahead)</li>
+        <li>a local police report if your passport has been stolen or your current passport if you still have it</li>
+        <li>proof of residency if your final destination is outside of the UK or the <a href="/EEA">European Economic Area</a></li>
+        <li>a passport-sized photograph (<a href="/photo">passport photo requirements</a>)</li>
+      </uL>
+
+      <p>You must attend an appointment at the nearest British embassy, high commission or consulate to complete the application.</p>
+      <p>It'll take you approximately 15 minutes to complete this application. The application will time out after 20 minutes without activity. You can use your browser's back button to return to previous pages until you submit your application.</p>
+
+        <div class="notice">
+  <i class="icon icon-important">
+    <span class="visually-hidden">Warning</span>
+  </i>
+  <strong class="bold-small">
+   If your passport is lost or stolen it will be cancelled when you submit your application.
+  </strong>
+
+
+</div>
+
+<p>
+</p>
+
+      <p>
+        <a class="button button-start" href="/cancelpassportv6/yourself" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Before you start</h2>
+
+      <p>By using this service, you accept our  <a href="/radio-buttons-checkboxes">cookie policy.</a> and <a href="#">terms and conditions.</a> </p>
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Related link</a></li>
+            <li><a href="#">Related link</a></li>
+            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,201 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <h1 class="heading-large">
+        When are you travelling?
+      </h1>
+
+      <p>Your exact journey will be printed in your emergency travel document </p>
+
+     <h1 class="heading-small">
+        Departure date
+      </h1>
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Date of departure</legend>
+          <div class="form-date">
+
+            <p class="form-hint">For example, 7 3 2016</p>
+
+            <div class="form-group form-group-day">
+              <label for="dob-day">Day</label>
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            </div>
+
+            <div class="form-group form-group-month">
+              <label for="dob-month">Month</label>
+              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+
+            <div class="form-group form-group-year">
+              <label for="dob-year">Year</label>
+              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2017">
+            </div>
+
+          </div>
+        </fieldset>
+
+             <h1 class="heading-small">
+        Arrival date if different from above (optional)
+</h1>
+      <form class="form">
+
+        <fieldset class="form-group">
+          <legend class="visuallyhidden">Date of arrival</legend>
+          <div class="form-date">
+
+            <p class="form-hint">For example, 7 3 2016</p>
+
+            <div class="form-group form-group-day">
+              <label for="dob-day">Day</label>
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            </div>
+
+            <div class="form-group form-group-month">
+              <label for="dob-month">Month</label>
+              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+
+            <div class="form-group form-group-year">
+              <label for="dob-year">Year</label>
+              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+            </div>
+
+          </div>
+        </fieldset>
+
+                <h3 class="heading-small">
+          Which mode(s) of transport will you use when crossing borders?
+
+        </h3>
+
+      
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">What is your nationality?</legend>
+
+            <label for="lost" class="block-label">
+              <input type="checkbox" name="lost" value="lost" id="lost">
+              Plane
+            </label>
+
+            <label for="stolen" class="block-label">
+              <input type="checkbox" name="stolen" value="stolen" id="stolen">
+              Train
+            </label>
+
+            <label for="expired" class="block-label">
+              <input type="checkbox" name="expired" value="expired" id="expired">
+              Boat
+            </label>
+            
+            <label for="full" class="block-label">
+              <input type="checkbox" name="full" value="full" id="full">
+              Car
+            </label>
+
+
+            <label for="damaged" class="block-label">
+              <input type="checkbox" name="damaged" value="damaged" id="damaged">
+              Coach
+            </label>
+
+
+
+            <label for="other" class="block-label">
+              <input type="checkbox" name="other" value="other" id="other">
+              Other
+            </label>
+
+            </div>
+            </fieldset>
+                <h3 class="heading-small">
+          Why do you need to travel?
+
+        </h3>
+
+      
+        <div class="form-group">
+       <fieldset>
+
+            <legend class="visuallyhidden">Why do you need to travel?</legend>
+<label for="radio-home" class="block-label">
+              <input id="radio-home" type="radio" name="whytravel" value="home">
+             
+              To return home
+            </label>
+
+            <label for="radio-business" class="block-label">
+              <input id="radio-business" type="radio" name="whytravel" value="business">
+            
+             For business purposes
+            </label>
+
+
+            <label for="radio-holiday" class="block-label">
+              <input id="radio-holiday" type="radio" name="whytravel" value="holiday">
+             
+              Going on holiday
+            </label>
+
+            <label for="radio-friends" class="block-label">
+              <input id="radio-friends" type="radio" name="whytravel" value="friends">
+            
+             To visit friends or family
+            </label>
+
+
+            <label for="radio-new" class="block-label">
+              <input id="radio-new" type="radio" name="whytravel" value="new">
+             
+              To apply for a new passport
+            </label>
+
+            <label for="radio-compassion" class="block-label">
+              <input id="radio-compassion" type="radio" name="whytravel" value="compassion">
+            
+             Compassionate reasons
+            </label>
+
+
+            <label for="radio-other" class="block-label" data-target="other">
+              <input id="radio-other" type="radio" name="whytravel" value="other">
+            
+             Other
+            </label>
+          
+
+            <div class="panel panel-border-narrow js-hidden" id="other">
+              <label class="form-label" for="other">
+                If other, tell us the reason
+              </label>
+              <input class="form-control" type="text" id="other">
+          </div> 
+
+</div>
+</fieldset>
+
+          <p>
+        <a class="button button-start" href="/cancelpassportv6/yourdetails" role="button">next</a>
+      </p>
+     
+
+
+      </form>
+
+
+</main>
+
+{% endblock %}

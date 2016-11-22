@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/examples/">Back</a>
+
+      <h1 class="heading-large">
+        Where are you travelling to?
+      </h1>
+
+      <p>Your exact journey will be printed in your emergency travel document.  You can use an emergency travel document to travel to your final destination via up to 5 countries.
+
+      <form class="form">
+
+      <label class="heading-small" for="full-name-f1">Which country or territory are you in now?</label>
+<input class="form-control" id="full-name-f1" type="text">
+
+
+<p>
+</p>
+
+      <form class="form">
+
+      <label class="heading-small" for="full-name-f1">Which country or territory is your destination?</label>
+<input class="form-control" id="full-name-f1" type="text">
+
+      <form class="form">
+
+      <p>
+      </p>
+
+
+      <label class="heading-small" for="full-name-f1">Countries you'll transit to reach your destination</label>
+      <p class="form-hint">If you're travelling via any other countries or territories (including stopping at an airport), provide them here. Otherwise leave blank. You don't need to give dates for transit countries.</p>
+      <label class="heading-small" for="full-name-f1">First transit country</label>
+     <p>
+     </p>
+
+<input class="form-control" id="full-name-f1" type="text">
+            
+<p>
+</p>
+
+<div>
+
+      <p><a href="/noTransit">Add another transit country.</a> </p>
+      <div/>
+
+
+<div 
+
+      <form action="/" method="post" class="form">
+
+        <h1 class="heading-small">
+          Do you need to return to where you are now?
+        </h1>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden"> Do you need to return to where you are now?</legend>
+
+                <label for="radio-yes" class="block-label" >
+              <input id="radio-yes" type="radio" name="return" value="yes">
+             
+              Yes
+            </label>
+
+            <label for="radio-no" class="block-label">
+              <input id="radio-no" type="radio" name="return" value="no">
+            
+             No
+            </label>
+
+   </div>
+            <div class="panel panel-border-narrow js-hidden" id="yes">
+              <label class="form-label" for="yes">
+              <p>
+                For the sake of this test, please select No.
+                </p>
+            </div>
+
+          </fieldset>
+          <p>
+        <a class="button button-start" href="/cancelpassportv6/ETDvalid" role="button">next</a>
+      </p>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

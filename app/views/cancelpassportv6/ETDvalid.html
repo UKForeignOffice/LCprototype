@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          Will your document be valid?
+        </h3>
+
+        <p>Emergency travel documents aren't valid for every journey.</p>
+
+
+        <p> The latest advice for the countries you plan to travel through is: </p>
+
+    <h3 class="heading-medium">
+          Netherlands
+        </h3>
+
+           <p>UK ETDs are accepted for entry, airside transit and exit from The Netherlands.</p>
+
+           <p>
+           </p>
+
+           <h3 class="heading-medium">
+          United Kingdom
+        </h3>
+
+           <p>UK ETDs are accepted for entry, airside transit and exit from the United Kingdom.</p>
+
+           <p>
+           </p>
+
+<h3 class="heading-medium">
+          Confirm that an emergency travel document will be valid for your journey
+        </h3>
+
+      
+
+           <ul class="list list-bullet">
+        <li>in the country you're leaving</li>
+        <li>in the country you're travelling to</li>
+        <li>in any countries you'll travel through to reach your destination</li>
+           </uL>
+
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">What is your nationality?</legend>
+
+                    <label for="radio-yes" class="block-label">
+              <input id="radio-yes" type="radio" name="valid" value="yes">
+             
+              Yes, I can use an emergency travel document on my journey
+            </label>
+
+            <label for="radio-no" class="block-label">
+              <input id="radio-no" type="radio" name="valid" value="no">
+            
+             No, I can't use an emergency travel document on my journey
+            </label>
+
+            
+            </div>
+
+          </fieldset>
+          <p>
+        <a class="button button-start" href="/cancelpassportv6/whentravel" role="button">next</a>
+      </p>
+        </div>
+
+
+
+      </form>
+
+    </div>
+  </div>
+</main>
+            
+
+{% endblock %}

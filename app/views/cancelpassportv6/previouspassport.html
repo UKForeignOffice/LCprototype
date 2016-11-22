@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+ 
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/" method="post" class="form">
+
+        <h3 class="heading-large">
+          Previously reported lost or stolen passports
+        </h3>
+        <p>
+        <h1 class="heading-small">
+        
+      
+        Have you previously reported any other lost or stolen?
+        </h1>
+        </p>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">previous passport</legend>
+
+                   
+            <label for="radio-yes" class="block-label" data-target="yes">
+              <input id="radio-yes" type="radio" name="previouspassport" value="yes">
+             
+              Yes
+            </label>
+
+            <label for="radio-no" class="block-label">
+              <input id="radio-no" type="radio" name="previouspassport" value="no">
+            
+             No
+            </label>
+
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="yes">
+              <label class="form-label" for="yes">
+              <p>
+                For the sake of this test, please select No.
+                </p>
+            </div>
+
+          </fieldset>
+          <p>
+        <a class="button button-start" href="/cancelpassportv6/otherinfo" role="button">next</a>
+      </p>
+        </div>
+
+
+
+      </form>
+
+    </div>
+  </div>
+</main>
+            
+
+{% endblock %}
