@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/examples/">Back</a>
+
+      <h1 class="heading-large">
+        Passport with a foreign embassy
+      </h1>
+
+
+      <form class="form">
+
+      <label class="heading-small" for="full-name-f1">Which country is your visa for?</label><div> </div>
+<input class="form-control" id="full-name-f1" type="text">
+
+      <form class="form">
+
+      <div>
+      </div>
+
+<p>
+</p>
+
+<form class="form">
+
+      <label class="heading-small" for="full-name-f1">What is your visa application reference number? (optional)</label><div> </div>
+       <div class="form-hint">If unsure leave blank</div>
+<input class="form-control" id="full-name-f1" type="text">
+
+      <form class="form">
+
+    
+
+<p>
+</p>
+
+
+      <form class="form">
+
+        <fieldset class="form-group">
+        <label class="heading-small" for="full-name-f1">When did you submit your visa application reference number (optional)</label><div> </div>
+          <legend class="visuallyhidden">Date of birth</legend>
+          <div class="form-date">
+          <div class="form-hint">If unsure leave blank</div>
+
+            <div class="form-hint">For example, 31 3 2016</div>
+
+            <div class="form-group form-group-day">
+              <label for="dob-day">Day</label>
+              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            </div>
+
+            <div class="form-group form-group-month">
+              <label for="dob-month">Month</label>
+              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+            </div>
+
+            <div class="form-group form-group-year">
+              <label for="dob-year">Year</label>
+              <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+            </div>
+
+          </div>
+         </fieldset>
+          <p>
+        <a class="button button-start" href="/embassyv1/previouspassport" role="button">next</a>
+      </p>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
